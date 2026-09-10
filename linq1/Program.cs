@@ -199,17 +199,17 @@ namespace linq1
             #endregion
 
             #region Question 6
-            var q6 = ProductList.Select(p => new
-            {
-                Name = p.ProductName,
-                Price = p.UnitPrice,
-                StockStatus = p.UnitsInStock > 0 ? "Available" : "Out of Stock"
-            });
+            //var q6 = ProductList.Select(p => new
+            //{
+            //    Name = p.ProductName,
+            //    Price = p.UnitPrice,
+            //    StockStatus = p.UnitsInStock > 0 ? "Available" : "Out of Stock"
+            //});
 
-            foreach (var item in q6)
-            {
-                Console.WriteLine($"Name: {item.Name}, Price: {item.Price}, StockStatus: {item.StockStatus}");
-            }
+            //foreach (var item in q6)
+            //{
+            //    Console.WriteLine($"Name: {item.Name}, Price: {item.Price}, StockStatus: {item.StockStatus}");
+            //}
             #endregion
 
             #region Question 7
