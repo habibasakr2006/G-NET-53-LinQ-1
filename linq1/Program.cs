@@ -222,14 +222,14 @@ namespace linq1
             #endregion
 
             #region Question 8
-            var q8 = ProductList
-                .OrderBy(p => p.Category)
-                .ThenByDescending(p => p.UnitPrice);
+            //var q8 = ProductList
+            //    .OrderBy(p => p.Category)
+            //    .ThenByDescending(p => p.UnitPrice);
 
-            foreach (var item in q8)
-            {
-                Console.WriteLine($"Category: {item.Category}, Price: {item.UnitPrice}, Name: {item.ProductName}");
-            }
+            //foreach (var item in q8)
+            //{
+            //    Console.WriteLine($"Category: {item.Category}, Price: {item.UnitPrice}, Name: {item.ProductName}");
+            //}
             #endregion
 
             #region Question 9
