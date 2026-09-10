@@ -153,13 +153,13 @@ namespace linq1
 
         static void Main(string[] args)
         {
-            #region Question 1
-            var q1 = ProductList.Where(p => p.Category == "Seafood");
+            //#region Question 1
+            //var q1 = ProductList.Where(p => p.Category == "Seafood");
 
-            foreach (var item in q1)
-            {
-                Console.WriteLine($"Name: {item.ProductName}, Price: {item.UnitPrice}");
-            }
+            //foreach (var item in q1)
+            //{
+            //    Console.WriteLine($"Name: {item.ProductName}, Price: {item.UnitPrice}");
+            //}
             #endregion
 
             #region Question 2
