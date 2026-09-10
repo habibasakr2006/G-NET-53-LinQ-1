@@ -190,12 +190,12 @@ namespace linq1
             #endregion
 
             #region Question 5
-            var q5 = ProductList.Where(p => p.UnitsInStock > 0 && p.Category == "Condiments");
+            //var q5 = ProductList.Where(p => p.UnitsInStock > 0 && p.Category == "Condiments");
 
-            foreach (var item in q5)
-            {
-                Console.WriteLine($"Name: {item.ProductName}, Stock: {item.UnitsInStock}");
-            }
+            //foreach (var item in q5)
+            //{
+            //    Console.WriteLine($"Name: {item.ProductName}, Stock: {item.UnitsInStock}");
+            //}
             #endregion
 
             #region Question 6
