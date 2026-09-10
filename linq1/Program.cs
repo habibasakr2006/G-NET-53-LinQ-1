@@ -172,12 +172,12 @@ namespace linq1
             #endregion
 
             #region Question 3
-            var q3 = ProductList.OrderBy(p => p.UnitPrice);
+            //var q3 = ProductList.OrderBy(p => p.UnitPrice);
 
-            foreach (var item in q3)
-            {
-                Console.WriteLine($"Name: {item.ProductName}, Price: {item.UnitPrice}");
-            }
+            //foreach (var item in q3)
+            //{
+            //    Console.WriteLine($"Name: {item.ProductName}, Price: {item.UnitPrice}");
+            //}
             #endregion
 
             #region Question 4
