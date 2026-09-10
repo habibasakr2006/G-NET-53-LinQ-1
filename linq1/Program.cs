@@ -153,7 +153,7 @@ namespace linq1
 
         static void Main(string[] args)
         {
-            //#region Question 1
+            #region Question 1
             //var q1 = ProductList.Where(p => p.Category == "Seafood");
 
             //foreach (var item in q1)
