@@ -154,149 +154,149 @@ namespace linq1
         static void Main(string[] args)
         {
             #region Question 1
-            var q1 = ProductList.Where(p => p.Category == "Seafood");
+            //var q1 = ProductList.Where(p => p.Category == "Seafood");
 
-            foreach (var item in q1)
-            {
-                Console.WriteLine($"Name: {item.ProductName}, Price: {item.UnitPrice}");
-            }
+            //foreach (var item in q1)
+            //{
+            //    Console.WriteLine($"Name: {item.ProductName}, Price: {item.UnitPrice}");
+            //}
             #endregion
 
             #region Question 2
-            var q2 = ProductList.Select(p => p.ProductName);
+            //var q2 = ProductList.Select(p => p.ProductName);
 
-            foreach (var name in q2)
-            {
-                Console.WriteLine(name);
-            }
+            //foreach (var name in q2)
+            //{
+            //    Console.WriteLine(name);
+            //}
             #endregion
 
             #region Question 3
-            var q3 = ProductList.OrderBy(p => p.UnitPrice);
+            //var q3 = ProductList.OrderBy(p => p.UnitPrice);
 
-            foreach (var item in q3)
-            {
-                Console.WriteLine($"Name: {item.ProductName}, Price: {item.UnitPrice}");
-            }
+            //foreach (var item in q3)
+            //{
+            //    Console.WriteLine($"Name: {item.ProductName}, Price: {item.UnitPrice}");
+            //}
             #endregion
 
             #region Question 4
-            var q4 = ProductList.Where(p => p.UnitPrice >= 10 && p.UnitPrice <= 30);
+            //var q4 = ProductList.Where(p => p.UnitPrice >= 10 && p.UnitPrice <= 30);
 
-            foreach (var item in q4)
-            {
-                Console.WriteLine($"Name: {item.ProductName}, Price: {item.UnitPrice}");
-            }
+            //foreach (var item in q4)
+            //{
+            //    Console.WriteLine($"Name: {item.ProductName}, Price: {item.UnitPrice}");
+            //}
             #endregion
 
             #region Question 5
-            var q5 = ProductList.Where(p => p.UnitsInStock > 0 && p.Category == "Condiments");
+            //var q5 = ProductList.Where(p => p.UnitsInStock > 0 && p.Category == "Condiments");
 
-            foreach (var item in q5)
-            {
-                Console.WriteLine($"Name: {item.ProductName}, Stock: {item.UnitsInStock}");
-            }
+            //foreach (var item in q5)
+            //{
+            //    Console.WriteLine($"Name: {item.ProductName}, Stock: {item.UnitsInStock}");
+            //}
             #endregion
 
             #region Question 6
-            var q6 = ProductList.Select(p => new
-            {
-                Name = p.ProductName,
-                Price = p.UnitPrice,
-                StockStatus = p.UnitsInStock > 0 ? "Available" : "Out of Stock"
-            });
+            //var q6 = ProductList.Select(p => new
+            //{
+            //    Name = p.ProductName,
+            //    Price = p.UnitPrice,
+            //    StockStatus = p.UnitsInStock > 0 ? "Available" : "Out of Stock"
+            //});
 
-            foreach (var item in q6)
-            {
-                Console.WriteLine($"Name: {item.Name}, Price: {item.Price}, StockStatus: {item.StockStatus}");
-            }
+            //foreach (var item in q6)
+            //{
+            //    Console.WriteLine($"Name: {item.Name}, Price: {item.Price}, StockStatus: {item.StockStatus}");
+            //}
             #endregion
 
             #region Question 7
-            var q7 = ProductList.Select((p, index) => $"{index + 1}. {p.ProductName}");
+            //var q7 = ProductList.Select((p, index) => $"{index + 1}. {p.ProductName}");
 
-            foreach (var item in q7)
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in q7)
+            //{
+            //    Console.WriteLine(item);
+            //}
             #endregion
 
             #region Question 8
-            var q8 = ProductList
-                .OrderBy(p => p.Category)
-                .ThenByDescending(p => p.UnitPrice);
+            //var q8 = ProductList
+            //    .OrderBy(p => p.Category)
+            //    .ThenByDescending(p => p.UnitPrice);
 
-            foreach (var item in q8)
-            {
-                Console.WriteLine($"Category: {item.Category}, Price: {item.UnitPrice}, Name: {item.ProductName}");
-            }
+            //foreach (var item in q8)
+            //{
+            //    Console.WriteLine($"Category: {item.Category}, Price: {item.UnitPrice}, Name: {item.ProductName}");
+            //}
             #endregion
 
             #region Question 9
-            var q9 = ProductList
-                .Where(p => p.Category == "Beverages")
-                .OrderByDescending(p => p.UnitsInStock);
+            //var q9 = ProductList
+            //    .Where(p => p.Category == "Beverages")
+            //    .OrderByDescending(p => p.UnitsInStock);
 
-            foreach (var item in q9)
-            {
-                Console.WriteLine($"Name: {item.ProductName}, Stock: {item.UnitsInStock}");
-            }
+            //foreach (var item in q9)
+            //{
+            //    Console.WriteLine($"Name: {item.ProductName}, Stock: {item.UnitsInStock}");
+            //}
             #endregion
 
             #region Question 10
-            var q10 =
-                from c in Customers
-                from o in c.Orders
-                where o.OrderDate.Year >= 1997
-                select new
-                {
-                    CustomerID = o.CustomerID,
-                    OrderDate = o.OrderDate
-                };
+            //var q10 =
+            //    from c in Customers
+            //    from o in c.Orders
+            //    where o.OrderDate.Year >= 1997
+            //    select new
+            //    {
+            //        CustomerID = o.CustomerID,
+            //        OrderDate = o.OrderDate
+            //    };
 
-            foreach (var item in q10)
-            {
-                Console.WriteLine($"CustomerID: {item.CustomerID}, OrderDate: {item.OrderDate:yyyy-MM-dd}");
-            }
+            //foreach (var item in q10)
+            //{
+            //    Console.WriteLine($"CustomerID: {item.CustomerID}, OrderDate: {item.OrderDate:yyyy-MM-dd}");
+            //}
             #endregion
 
             #region Question 11
-            var q11 = ProductList.Select((p, index) => new
-            {
-                Position = index + 1,
-                ProductName = p.ProductName
-            });
+            //var q11 = ProductList.Select((p, index) => new
+            //{
+            //    Position = index + 1,
+            //    ProductName = p.ProductName
+            //});
 
-            foreach (var item in q11)
-            {
-                Console.WriteLine($"Position: {item.Position}, ProductName: {item.ProductName}");
-            }
+            //foreach (var item in q11)
+            //{
+            //    Console.WriteLine($"Position: {item.Position}, ProductName: {item.ProductName}");
+            //}
             #endregion
 
             #region Question 12
-            string[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+            //string[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
 
-            var q12 = Arr
-                .OrderBy(w => w.Length)
-                .ThenBy(w => w, StringComparer.OrdinalIgnoreCase);
+            //var q12 = Arr
+            //    .OrderBy(w => w.Length)
+            //    .ThenBy(w => w, StringComparer.OrdinalIgnoreCase);
 
-            foreach (var word in q12)
-            {
-                Console.WriteLine(word);
-            }
+            //foreach (var word in q12)
+            //{
+            //    Console.WriteLine(word);
+            //}
             #endregion
 
             #region Question 13
-            string[] digits = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+            //string[] digits = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
 
-            var q13 = digits
-                .Where(d => d.Length > 1 && d[1] == 'i')
-                .Reverse();
+            //var q13 = digits
+            //    .Where(d => d.Length > 1 && d[1] == 'i')
+            //    .Reverse();
 
-            foreach (var digit in q13)
-            {
-                Console.WriteLine(digit);
-            }
+            //foreach (var digit in q13)
+            //{
+            //    Console.WriteLine(digit);
+            //}
             #endregion
         }
     }
