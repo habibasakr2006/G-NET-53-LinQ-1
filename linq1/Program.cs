@@ -244,20 +244,20 @@ namespace linq1
             #endregion
 
             #region Question 10
-            var q10 =
-                from c in Customers
-                from o in c.Orders
-                where o.OrderDate.Year >= 1997
-                select new
-                {
-                    CustomerID = o.CustomerID,
-                    OrderDate = o.OrderDate
-                };
+            //var q10 =
+            //    from c in Customers
+            //    from o in c.Orders
+            //    where o.OrderDate.Year >= 1997
+            //    select new
+            //    {
+            //        CustomerID = o.CustomerID,
+            //        OrderDate = o.OrderDate
+            //    };
 
-            foreach (var item in q10)
-            {
-                Console.WriteLine($"CustomerID: {item.CustomerID}, OrderDate: {item.OrderDate:yyyy-MM-dd}");
-            }
+            //foreach (var item in q10)
+            //{
+            //    Console.WriteLine($"CustomerID: {item.CustomerID}, OrderDate: {item.OrderDate:yyyy-MM-dd}");
+            //}
             #endregion
 
             #region Question 11
