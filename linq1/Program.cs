@@ -163,12 +163,12 @@ namespace linq1
             #endregion
 
             #region Question 2
-            var q2 = ProductList.Select(p => p.ProductName);
+            //var q2 = ProductList.Select(p => p.ProductName);
 
-            foreach (var name in q2)
-            {
-                Console.WriteLine(name);
-            }
+            //foreach (var name in q2)
+            //{
+            //    Console.WriteLine(name);
+            //}
             #endregion
 
             #region Question 3
