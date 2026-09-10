@@ -233,14 +233,14 @@ namespace linq1
             #endregion
 
             #region Question 9
-            var q9 = ProductList
-                .Where(p => p.Category == "Beverages")
-                .OrderByDescending(p => p.UnitsInStock);
+            //var q9 = ProductList
+            //    .Where(p => p.Category == "Beverages")
+            //    .OrderByDescending(p => p.UnitsInStock);
 
-            foreach (var item in q9)
-            {
-                Console.WriteLine($"Name: {item.ProductName}, Stock: {item.UnitsInStock}");
-            }
+            //foreach (var item in q9)
+            //{
+            //    Console.WriteLine($"Name: {item.ProductName}, Stock: {item.UnitsInStock}");
+            //}
             #endregion
 
             #region Question 10
