@@ -213,12 +213,12 @@ namespace linq1
             #endregion
 
             #region Question 7
-            var q7 = ProductList.Select((p, index) => $"{index + 1}. {p.ProductName}");
+            //var q7 = ProductList.Select((p, index) => $"{index + 1}. {p.ProductName}");
 
-            foreach (var item in q7)
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in q7)
+            //{
+            //    Console.WriteLine(item);
+            //}
             #endregion
 
             #region Question 8
