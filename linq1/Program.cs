@@ -274,29 +274,29 @@ namespace linq1
             #endregion
 
             #region Question 12
-            string[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+            //string[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
 
-            var q12 = Arr
-                .OrderBy(w => w.Length)
-                .ThenBy(w => w, StringComparer.OrdinalIgnoreCase);
+            //var q12 = Arr
+            //    .OrderBy(w => w.Length)
+            //    .ThenBy(w => w, StringComparer.OrdinalIgnoreCase);
 
-            foreach (var word in q12)
-            {
-                Console.WriteLine(word);
-            }
+            //foreach (var word in q12)
+            //{
+            //    Console.WriteLine(word);
+            //}
             #endregion
 
             #region Question 13
-            string[] digits = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+            //string[] digits = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
 
-            var q13 = digits
-                .Where(d => d.Length > 1 && d[1] == 'i')
-                .Reverse();
+            //var q13 = digits
+            //    .Where(d => d.Length > 1 && d[1] == 'i')
+            //    .Reverse();
 
-            foreach (var digit in q13)
-            {
-                Console.WriteLine(digit);
-            }
+            //foreach (var digit in q13)
+            //{
+            //    Console.WriteLine(digit);
+            //}
             #endregion
         }
     }
