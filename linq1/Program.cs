@@ -261,16 +261,16 @@ namespace linq1
             #endregion
 
             #region Question 11
-            var q11 = ProductList.Select((p, index) => new
-            {
-                Position = index + 1,
-                ProductName = p.ProductName
-            });
+            //var q11 = ProductList.Select((p, index) => new
+            //{
+            //    Position = index + 1,
+            //    ProductName = p.ProductName
+            //});
 
-            foreach (var item in q11)
-            {
-                Console.WriteLine($"Position: {item.Position}, ProductName: {item.ProductName}");
-            }
+            //foreach (var item in q11)
+            //{
+            //    Console.WriteLine($"Position: {item.Position}, ProductName: {item.ProductName}");
+            //}
             #endregion
 
             #region Question 12
